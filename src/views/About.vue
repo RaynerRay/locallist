@@ -27,7 +27,7 @@
             </v-card>
             </v-row>
           </v-col>
-        <v-col cols="12" sm="4">
+        <v-col cols="12" sm="2">
           <v-row justify="center">
             <v-img class="mb-10 mt-10" src="../assets/verified.png" max-width="150" ></v-img>
           </v-row>

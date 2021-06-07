@@ -84,7 +84,7 @@
             Advertise
           </v-btn>
 
-          <v-btn width="233" class="ml-3 mt-2 white--text searchbtns" color="#53abf1">
+          <v-btn to="faq" width="233" class="ml-3 mt-2 white--text searchbtns" color="#53abf1">
           <v-icon class="white--text mr-2">mdi-help-circle</v-icon>
             FAQ
           </v-btn>
