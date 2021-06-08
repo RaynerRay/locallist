@@ -12,7 +12,8 @@
         What is Locallist?
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        We are an online marketplace, that helps you quickly find and hire trusted local service professionals.
+        We are an online marketplace, that helps you quickly find and 
+        handpick the best rated service pros for any work you want done.
       </v-expansion-panel-content>
       </v-expansion-panel>
 

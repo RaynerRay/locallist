@@ -1,5 +1,6 @@
 <template>
     <div class="filters">
+      <router-link :to="{name: 'companiesList' , params: {id:_id}}">
           <v-overflow-btn
             v-model="selectedCategory"
             class=""
@@ -9,6 +10,7 @@
             item-value="_id"
             target="#dropdown-example"
           ></v-overflow-btn>
+      </router-link>
     <v-divider></v-divider>
           <v-overflow-btn
             v-model="selectedLocation"

@@ -13,6 +13,7 @@
 
         <v-row justify="center" class="mt-4 mx-2">
             <v-btn
+            to="join"
             color="#f00a36"
             x-large
             class="my-1 mt-4 white--text"
