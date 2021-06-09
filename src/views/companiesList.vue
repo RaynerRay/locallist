@@ -1,16 +1,28 @@
 <template>
 <div> 
   <SearchBar />
+  
   <v-card class="companiesList" color="#f7f7f7">
     <v-container>
     <v-row>
       <v-col cols="12" sm="4">
         <v-card color="white" class="my-2" max-width="400" max-height="150" outlined>
-          <filters class=""/>
+
+           <v-overflow-btn
+            v-model="selectedLocation"
+            class="my-2 ml-5"
+            :items="places"
+            item-value="text"
+            label="Select A Location "
+          ></v-overflow-btn>
+
         </v-card>
       </v-col>
       <v-col cols="12" sm="8">
+        
+        
          <div v-for="relevant in relevantCompanies" :key="relevant.id" class="">  
+           
                 <v-card
                     class="mx-auto my-2"
                     max-width="700"
@@ -73,20 +85,29 @@
 <script>
 import { mapState } from "vuex";
 import SearchBar from "@/components/SearchBar";
-import filters from "@/components/filters";
 
 export default {
-components: { SearchBar , filters},
+components: { SearchBar},
   data() {
     return {
       id: this.$route.params.id,
       model: null,
-      selectedCategory: undefined,
+      selectedLocation: undefined,
+      places: [{ text: "Harare" }, { text: "Bulawayo" }, { text: "Mutare" },
+      { text: "Gweru" }, { text: "Masvingo" }, { text: "Victoria Falls" }, { text: "Beitbridge" }],
     };
   },
   mounted() {
     this.$store.dispatch("loadCategories");
     this.$store.dispatch("loadCompanies");
+  },
+  methods: {
+    selectedLoc(i) {
+      this.selectedLocation = i
+    },
+    noLoc() {
+      this.selectedLocation = undefined
+    }
   },
 
   computed: {
@@ -96,10 +117,16 @@ components: { SearchBar , filters},
       return this.companies.find(company => company._id == this.id);
     },
     relevantCompanies() {
-      return this.companies.filter(company => {
+      if(this.selectedLocation !== undefined ) {
+        return this.companies.filter(company => {
+        return company.categories.includes(this.id) && company.location.toLowerCase().includes(this.selectedLocation.toLowerCase());
+      })
+      }
+      else{
+        return this.companies.filter(company => {
         return company.categories.includes(this.id);
       })
-      
+      }
     },
     
   },

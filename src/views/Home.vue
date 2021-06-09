@@ -155,8 +155,8 @@ export default {
     ...mapState(["categories", "companies"]),
     //filter categories
     filteredNames: function() {
-      return this.categories.filter((company) => {
-        return company.name.toLowerCase().match(this.search.toLowerCase())
+      return this.categories.filter((category) => {
+        return category.name.toLowerCase().match(this.search.toLowerCase())
       })
     }
     },

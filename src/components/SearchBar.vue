@@ -36,6 +36,8 @@
   </v-card>
 </template>
 
+
+
 <style>
 .search-bar{
     background-color: white;

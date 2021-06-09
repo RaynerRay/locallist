@@ -1,17 +1,8 @@
 <template>
     <div class="filters">
-      <router-link :to="{name: 'companiesList' , params: {id:_id}}">
-          <v-overflow-btn
-            v-model="selectedCategory"
-            class=""
-            :items="categories"
-            label="Select A Category "
-            item-text="name"
-            item-value="_id"
-            target="#dropdown-example"
-          ></v-overflow-btn>
-      </router-link>
+          
     <v-divider></v-divider>
+
           <v-overflow-btn
             v-model="selectedLocation"
             class=""
@@ -30,6 +21,7 @@ export default {
   data: () => ({
     model: null,
     selectedCategory: undefined,
+    selectedLocation: undefined,
   }),
   components: {},
   methods: {},
