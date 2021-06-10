@@ -102,7 +102,7 @@ export default {
     return {
       id: this.$route.params.id,
       length: 5,
-      rating: "",
+      rating: undefined,
       comment: "",
 
       valid: true,

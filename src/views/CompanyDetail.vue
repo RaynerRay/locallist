@@ -139,7 +139,7 @@
               color="black"
               
             >
-              <v-tab><span><v-icon class="mr-2">mdi-picture-in-picture-bottom-right-outline</v-icon></span>Photos</v-tab>
+              <v-tab class="mr-2"><span><v-icon >mdi-picture-in-picture-bottom-right-outline</v-icon></span>Photos</v-tab>
               <v-tab><span><v-icon class="mr-2">mdi-help-circle-outline</v-icon></span>About Us</v-tab>
               <v-tab><span><v-icon class="mr-2">mdi-thumb-up-outline</v-icon></span>Reviews</v-tab>
 
@@ -229,9 +229,7 @@
     </v-card>
     
   </v-container>
-  <div v-for="photo in photos" :key="photo.id">
-    {{photo.image}}
-  </div>
+  
 </div>
 </template>
 
