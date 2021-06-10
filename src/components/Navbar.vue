@@ -17,7 +17,7 @@
         <ul><li>FAQ</li></ul>
       </v-btn>
       
-      <v-btn to="join" icon class="mx-8 ml-6 navText">
+      <v-btn to="join" icon class="mx-4 ml-6 navText">
         <ul><li>Join as a Pro</li></ul>
       </v-btn>
       <v-btn icon class="navText">

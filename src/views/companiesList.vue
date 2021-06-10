@@ -10,7 +10,7 @@
 
            <v-overflow-btn
             v-model="selectedLocation"
-            class="my-2 ml-5"
+            class=""
             :items="places"
             item-value="text"
             label="Select A Location "
@@ -70,7 +70,12 @@
                         <p class="my-1"><v-icon class="ml-1">mdi-phone</v-icon> {{ relevant.contact }}</p>
                         <v-spacer></v-spacer>
                         
-                        <v-btn text color="deep-blue accent3" outlined><span><v-icon>mdi-arrow-right</v-icon></span>View More</v-btn>
+                        <router-link :to="{name: 'company-detail' , params: {id:relevant._id}}">
+                          <v-btn text color="deep-blue accent3" outlined>
+                            <span><v-icon>mdi-arrow-right</v-icon></span>
+                            View More
+                          </v-btn>
+                        </router-link>
                         
                         </v-card-actions>
                 </v-card>

@@ -20,12 +20,13 @@
 
     </v-list-item>
     <v-card-actions>
+      
       <v-card width="480" height="55" >
+
+ 
                 <v-text-field
-                    class=" white--text"
                     placeholder=" search for a service, eg: Photography"
                     v-model="search"
-                    color="white"
                     outlined
                     @blur="searchResultsVisible = false"
                     @focus="searchResultsVisible = true"
@@ -37,7 +38,7 @@
        
         
        <!--Search Result--> 
-      <v-row justify="center">       
+      <v-row class="mt-0" justify="center" style="position:absolute; z-index:999; width:100%">   
       <v-card
         class="justify-center"
         max-width="350"
