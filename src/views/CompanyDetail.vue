@@ -187,7 +187,7 @@
               
           <div v-for="relevant in relevantComments" :key="relevant.id">
            <v-card
-              class="mx-auto my-5"
+              class="mx-auto my-2"
               max-width="1100"
               outlined
               
@@ -195,23 +195,13 @@
               <v-list-item three-line>
                 <v-list-item-content>
                   <v-row>
-                     <v-col>
-                          <v-rating
-                        v-model="rating"
-                        length="5"
-                        readonly
-                        color="green"
-                        background-color="grey lighten-1"
-                        >
-                        </v-rating>
-
-                        
-                          <p>by: <span  class="red--text">{{relevant.name}}</span></p>
+                      <v-col>
+                       <h4>by: <span  class="red--text">{{relevant.name}}</span></h4>
                         
                       </v-col>
                       <v-spacer></v-spacer>
                       <v-col>
-                        {{relevant.createdAt}}
+                        <h5>{{relevant.createdAt}}</h5>
                       </v-col>
 
                   </v-row>   

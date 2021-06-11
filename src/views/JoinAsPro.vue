@@ -56,8 +56,7 @@
                     <v-col>
                         <v-text-field
                         name="phone"
-                        type="phone"
-                        :rules="phoneRules"
+                        type="number"
                         label="Phone Number"
                         required
                         outlined
@@ -125,6 +124,24 @@
         </v-row>
     </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      nameRules: [
+        v => !!v || "Required",
+        v => (v && v.length <= 50) || "Name must be less than 50 characters",
+      ],
+
+      emailRules: [
+        v => !!v || "E-mail is required",
+        v => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      ],
+    };
+  },
+  };
+</script>
 
 <style scoped>
 .join {

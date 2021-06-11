@@ -13,12 +13,12 @@
 
       
       
-      <v-btn icon class="mx-4 navText">
+      <v-btn to="faq" icon class="mx-4 navText">
         <ul><li>FAQ  <span class="red--text">|</span>  </li></ul>
       </v-btn>
       
 
-      <v-btn icon class=" ml-6 navText">
+      <v-btn to="join" icon class=" ml-6 navText">
         <ul><li>Join as a Pro</li></ul>
       </v-btn>
       <v-btn icon class="navText">

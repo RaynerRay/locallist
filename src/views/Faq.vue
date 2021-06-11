@@ -2,7 +2,7 @@
 <div class="faq">
 <v-container>
     <v-row justify="center">
-        <h1 class="faq-heading display-1 about-heading mt-10 mb-10">Frequently Asked Questions</h1>
+        <h1 class="faq-heading display-1 about-heading ml-2 mt-10 mb-10">Frequently Asked Questions</h1>
     </v-row>
 
   <v-expansion-panels class="mt-10">

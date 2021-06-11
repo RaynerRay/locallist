@@ -1,14 +1,14 @@
 <template>
     <div class="joinAsPro">
-        <v-row justify="center" class="mt-4 text--center">
-            <h1 class="heading mt-4 font-weight-bold">
+        <v-row justify="center" class="mt-4 ml-2 text--center">
+            <h2 class="heading mt-4 font-weight-bold">
                 Do you have a service & want new customers?
-            </h1>
+            </h2>
         </v-row>
 
     <v-container>
         <v-row justify="center" class="mt-4  text--center">
-            <h2 class="small-hd font-weight-thin">Add your Service to our platform & join as a Pro</h2>
+            <h3 class="small-hd font-weight-thin">Add your Service to our platform & join as a Pro</h3>
         </v-row>
 
         <v-row justify="center" class="mt-4 mx-2">
