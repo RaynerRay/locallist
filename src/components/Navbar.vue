@@ -6,7 +6,7 @@
       dark
     >
       <v-btn to="/" icon class="ml-2 navText">
-        <ul><li><v-img src="../assets/logo.png" class="ml-4"></v-img></li></ul>
+        <ul><li><v-img src="../assets/logo.png" class="ml-4 mt-2"></v-img></li></ul>
       </v-btn>
 
       <v-spacer></v-spacer>
