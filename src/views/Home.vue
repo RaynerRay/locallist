@@ -22,16 +22,14 @@
     <v-card-actions>
       
       <v-card width="480" height="55" >
-
- 
-                <v-text-field
-                    placeholder=" search for a service, eg: Photography"
-                    v-model="search"
-                    outlined
-                    @blur="searchResultsVisible = false"
-                    @focus="searchResultsVisible = true"
-                    >
-                </v-text-field>
+          <v-text-field
+              placeholder=" search for a service, eg: Photography"
+              v-model="search"
+              outlined
+              @blur="searchResultsVisible = false"
+              @focus="searchResultsVisible = true"
+              >
+          </v-text-field>
                    
                 </v-card>
        </v-card-actions>

@@ -4,6 +4,7 @@
          <v-card
             class="mx-auto"
             max-width="1000"
+            
             flat
           >
             <v-list-item three-line>

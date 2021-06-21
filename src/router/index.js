@@ -59,6 +59,14 @@ const routes = [
       ),
   },
   {
+    path: "/createcategory",
+    name: "create-categories",
+    component: () =>
+      import(
+        /* webpackChunkName: "createcategory" */ "../views/CreateCategory.vue"
+      ),
+  },
+  {
     path: "/login",
     name: "login",
     component: () =>
